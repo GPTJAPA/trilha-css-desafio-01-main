@@ -1,5 +1,6 @@
 @import url("reset.css");
 
+/* Estilos Gerais */
 body {
   background-color: black;
 }
@@ -17,6 +18,8 @@ p {
 section {
   margin: 100px auto;
 }
+
+/* Banner */
 .banner {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.6),
@@ -81,6 +84,7 @@ section {
   object-fit: contain;
 }
 
+/* Course Content */
 #course-content {
   width: 800px;
   text-align: center;
@@ -105,6 +109,7 @@ section {
   color: #33a8db;
 }
 
+/* Transform World */
 #transform-world {
   height: 560px;
   background-size: cover;
@@ -123,6 +128,7 @@ section {
   text-shadow: 3px 2px #33a8db;
 }
 
+/* Professional Challenges */
 #professional-challenges {
   text-align: center;
   width: 800px;
@@ -132,6 +138,7 @@ section {
   margin: 32px 0;
 }
 
+/* Footer */
 footer {
   padding: 60px 0;
   text-align: center;
@@ -150,4 +157,56 @@ footer a {
   color: #33a8db;
   font-weight: bold;
   text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+  .banner-content {
+    width: 90%;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .banner .logo {
+    height: 200px;
+    width: 200px;
+  }
+
+  .banner .banner-content button {
+    padding: 12px 24px;
+  }
+
+  #course-content {
+    width: 90%;
+  }
+
+  #course-content .modules-list .module {
+    width: 100%;
+  }
+
+  #transform-world {
+    padding: 100px 20px;
+  }
+
+  #transform-world p {
+    font-size: 2rem;
+  }
+
+  #professional-challenges {
+    width: 90%;
+  }
+
+  footer .dio-logo {
+    width: 200px;
+  }
 }
