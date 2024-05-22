@@ -4,6 +4,7 @@
 body {
   background-color: black;
 }
+
 h2 {
   font-size: 2rem;
   color: #33a8db;
@@ -12,9 +13,11 @@ h2 {
   text-transform: uppercase;
   margin-bottom: 24px;
 }
+
 p {
   color: white;
 }
+
 section {
   margin: 100px auto;
 }
@@ -77,6 +80,7 @@ section {
   border-image-slice: 10;
   border-radius: 30px;
 }
+
 .banner .logo img {
   margin: auto;
   width: 100%;
@@ -196,6 +200,8 @@ footer a:hover {
 
   #transform-world {
     padding: 100px 20px;
+    height: auto; /* Ajuste de altura */
+    background-attachment: scroll; /* Desativa o background fixo em dispositivos móveis */
   }
 
   #transform-world p {
@@ -208,5 +214,11 @@ footer a:hover {
 
   footer .dio-logo {
     width: 200px;
+  }
+
+  /* Ajuste para todas as imagens no conteúdo */
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
